@@ -1,0 +1,11 @@
+{
+  "name": "york-capital-demo",
+  "version": "1.0.0",
+  "description": "York Capital Management concept demo",
+  "scripts": {
+    "start": "npx serve . -p $PORT"
+  },
+  "dependencies": {
+    "serve": "^14.2.1"
+  }
+}
