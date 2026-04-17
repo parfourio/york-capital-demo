@@ -869,15 +869,21 @@
     }
 
     .team-avatar {
-      width: 56px;
-      height: 56px;
-      background: linear-gradient(135deg, var(--steel), var(--navy-light));
+      width: 72px;
+      height: 72px;
       border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      overflow: hidden;
       margin-bottom: 16px;
-      border: 2px solid rgba(201,168,76,0.15);
+      border: 2px solid rgba(201,168,76,0.3);
+      flex-shrink: 0;
+    }
+
+    .team-avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
     }
 
     .team-avatar-initials {
@@ -932,6 +938,23 @@
     }
 
     .team-mini:hover { border-color: rgba(201,168,76,0.2); }
+
+    .team-mini-photo {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto 10px;
+      border: 1px solid rgba(201,168,76,0.2);
+    }
+
+    .team-mini-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+    }
 
     .team-mini-initials {
       font-family: 'Cormorant Garamond', serif;
@@ -1608,25 +1631,25 @@
 
       <div class="team-grid">
         <div class="team-card">
-          <div class="team-avatar"><span class="team-avatar-initials">ZJ</span></div>
+          <div class="team-avatar"><img src="https://yorkcapital.com/wp-content/uploads/2019/12/York30253_Zalman_Jacobs-768x768.png" alt="Zalmie Jacobs" /></div>
           <div class="team-name">Zalmie Jacobs</div>
           <div class="team-title">Partner · Head of PE</div>
           <p class="team-bio">Leads the York PE platform, overseeing deal origination, portfolio oversight, and strategic direction across all active investments.</p>
         </div>
         <div class="team-card">
-          <div class="team-avatar"><span class="team-avatar-initials">HN</span></div>
+          <div class="team-avatar"><img src="https://yorkcapital.com/wp-content/uploads/2020/11/Harish-768x768.png" alt="Harish Nataraj" /></div>
           <div class="team-name">Harish Nataraj</div>
           <div class="team-title">Managing Director</div>
           <p class="team-bio">Focused on deal execution and portfolio value creation with deep expertise in business and industrial services sectors.</p>
         </div>
         <div class="team-card">
-          <div class="team-avatar"><span class="team-avatar-initials">RS</span></div>
+          <div class="team-avatar"><img src="https://yorkcapital.com/wp-content/uploads/2020/01/Shapiro_Robbie_Color-1-768x768.png" alt="Robbie Shapiro" /></div>
           <div class="team-name">Robbie Shapiro</div>
           <div class="team-title">Managing Director</div>
           <p class="team-bio">Leads origination and execution across the consumer and wellness vertical, leveraging a broad network of founder relationships.</p>
         </div>
         <div class="team-card featured">
-          <div class="team-avatar"><span class="team-avatar-initials">CJ</span></div>
+          <div class="team-avatar"><img src="https://yorkcapital.com/wp-content/uploads/2020/01/Chris_Russell_Col-768x768.png" alt="Curt Johnson" /></div>
           <div class="team-name">Curt Johnson</div>
           <div class="team-title">MD · CFO</div>
           <p class="team-bio">Oversees financial operations, fund accounting, and investor relations across the York PE platform and related entities.</p>
@@ -1637,47 +1660,47 @@
 
       <div class="team-secondary-grid">
         <div class="team-mini">
-          <div class="team-mini-initials">LB</div>
+          <div class="team-mini-photo"><img src="https://yorkcapital.com/wp-content/uploads/2020/01/lyle-768x864.png" alt="Lyle Berstein" /></div>
           <div class="team-mini-name">Lyle Berstein</div>
           <div class="team-mini-title">Principal</div>
         </div>
         <div class="team-mini">
-          <div class="team-mini-initials">JP</div>
+          <div class="team-mini-photo"><img src="https://yorkcapital.com/wp-content/uploads/2021/09/Plattus_Jack-768x768.png" alt="Jack Plattus" /></div>
           <div class="team-mini-name">Jack Plattus</div>
           <div class="team-mini-title">Principal</div>
         </div>
         <div class="team-mini">
-          <div class="team-mini-initials">AK</div>
+          <div class="team-mini-photo"><img src="https://yorkcapital.com/wp-content/uploads/2020/01/alex-color-768x864.png" alt="Alex Kozikowski" /></div>
           <div class="team-mini-name">Alex Kozikowski</div>
           <div class="team-mini-title">Vice President</div>
         </div>
         <div class="team-mini">
-          <div class="team-mini-initials">TM</div>
+          <div class="team-mini-photo"><img src="https://yorkcapital.com/wp-content/uploads/2020/01/Tom_Mara_color-removebg-preview.png" alt="Tom Mara" /></div>
           <div class="team-mini-name">Tom Mara</div>
           <div class="team-mini-title">Senior Advisor, IC</div>
         </div>
         <div class="team-mini">
-          <div class="team-mini-initials">RL</div>
+          <div class="team-mini-photo"><img src="https://yorkcapital.com/wp-content/uploads/2020/05/Robert_Lo_Col-768x768.png" alt="Robert Lo" /></div>
           <div class="team-mini-name">Robert Lo</div>
           <div class="team-mini-title">SVP Fund Controller</div>
         </div>
         <div class="team-mini">
-          <div class="team-mini-initials">LS</div>
+          <div class="team-mini-photo"><img src="https://yorkcapital.com/wp-content/uploads/2020/11/LillianSiu-768x768.png" alt="Lillian Siu" /></div>
           <div class="team-mini-name">Lillian Siu</div>
           <div class="team-mini-title">Asst Controller</div>
         </div>
         <div class="team-mini">
-          <div class="team-mini-initials">AM</div>
+          <div class="team-mini-photo"><img src="https://yorkcapital.com/wp-content/uploads/2020/01/maykam-768x864.png" alt="Anushya Makam" /></div>
           <div class="team-mini-name">Anushya Makam</div>
           <div class="team-mini-title">Associate</div>
         </div>
         <div class="team-mini">
-          <div class="team-mini-initials">DP</div>
+          <div class="team-mini-photo"><img src="https://yorkcapital.com/wp-content/uploads/2025/09/presser-dj-768x864.png" alt="DJ Presser" /></div>
           <div class="team-mini-name">DJ Presser</div>
           <div class="team-mini-title">Associate</div>
         </div>
         <div class="team-mini">
-          <div class="team-mini-initials">KB</div>
+          <div class="team-mini-photo"><img src="https://yorkcapital.com/wp-content/uploads/2024/06/Bahaj_Kate_York-Capital-1-768x864.png" alt="Kate Bahaj" /></div>
           <div class="team-mini-name">Kate Bahaj</div>
           <div class="team-mini-title">Exec Business Partner</div>
         </div>
